@@ -1,0 +1,15 @@
+<div id="{{ Title }}" class="block">
+	<div class="inner">
+		<div class="block-items">
+			{% for item in Block %}
+			<div class="block-item">
+				<h4>{{ item.title }}</h4>
+				<div class="block-content">
+					{{ item.content }}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
