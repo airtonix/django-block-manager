@@ -31,14 +31,15 @@ It might not be pretty, or fast, but it achieved what I wanted.
         })
 
    c. notes :
-      i. rendered_content_func : is a function which returns data to be inserted
+
+       i. rendered_content_func : is a function which returns data to be inserted
            into template output, so if you need it to be html, then it's up to you
            to ensure it's safe.
 
-      i. SectionName : By default this will be rendered inside a H2 tag,
+       i. SectionName : By default this will be rendered inside a H2 tag,
            provide a template to override this.
 
-      i. YourBlockName : This is how you call a block, which contains many bits of
+       i. YourBlockName : This is how you call a block, which contains many bits of
            content. Requesting specific parts of a block is my next step to implement.
 
    d. In your template :
@@ -47,13 +48,13 @@ It might not be pretty, or fast, but it achieved what I wanted.
 
    e. Provide the block override template
 
-      i. in you template directory create :
+       i. in you template directory create :
 
             ...
             blockmanager +
                          +- block.html
             ...
-      i. Fill block.html with
+       i. Fill block.html with
 
             <h1>{{ Title }}</h1>
             <p>{{ Content }}</p>
