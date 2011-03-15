@@ -65,9 +65,9 @@ class Block:
 	_content = []
 
 	def __init__(self, manager=None, title=None, content=None):
+		self.title = title
+		self.content = content
 		try :
-			self.set_title(title)
-			self.add_content(content)
 			self.manager = manager
 		except :
 			raise "No manager provided."
@@ -102,8 +102,8 @@ class Block:
 
 	def render (self, template_path="blockmanager/block.html"):
 		return render_to_string(template_path,{
-			"Title": self._title,
-			"Block": self._content
+			"Title": self.title,
+			"Block": self.content
 		})
 
 	def __str__(self):

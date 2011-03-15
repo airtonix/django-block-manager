@@ -19,7 +19,7 @@ class BlockNode ( template.Node ):
 	def render ( self, context ):
 		try :
 			block = block_manager.get_block( self.block_name )
-			return block.render()
+			return str(block)
 		except:
 			return ""
 
