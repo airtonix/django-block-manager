@@ -4,7 +4,7 @@ from django.template.loader import render_to_string
 from django.template import Context, loader
 from django.utils.safestring import mark_safe
 
-from ...base.lib.autorender import auto_render
+from autorender import auto_render
 
 LOGGER = logging.getLogger(__name__)
 
