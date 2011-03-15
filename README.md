@@ -18,19 +18,45 @@ It might not be pretty, or fast, but it achieved what I wanted.
 
 1. For each application that you want to create "blocks" for :
 
- a. edit the __init__.py
+   a. edit the applications __init__.py file
 
- b. insert something like :
+   b. insert something like :
 
-    from django_block_manager.lib.manager import BlockManager
+        from django_block_manager.lib.manager import BlockManager
 
-    content_func = view_function
+        blockmanager = BlockManager()
+        blockmanager.add_block('YourBlockName', {
+            'title' : 'SectionName',
+            'content' : rendered_content_func,
+        })
 
-    blockmanager = BlockManager()
-    blockmanager.add_block('virtualhost-link-list', {
-        'title' : 'Virtualhosts',
-        'content' : content_func,
-    })
+   c. notes :
+        i. rendered_content_func : is a function which returns data to be inserted
+           into template output, so if you need it to be html, then it's up to you
+           to ensure it's safe.
+
+       ii. SectionName : By default this will be rendered inside a H2 tag,
+           provide a template to override this.
+
+      iii. YourBlockName : This is how you call a block, which contains many bits of
+           content. Requesting specific parts of a block is my next step to implement.
+
+   d. In your template :
+
+        {% blockmanager YourBlockName [SectionName] %}
+
+   e. Provide the block override template
+
+        i. in you template directory create :
+
+            ...
+            blockmanager +
+                         +- block.html
+            ...
+        ii. Fill block.html with
+
+            <h1>{{ Title }}</h1>
+            <p>{{ Content }}</p>
 
 
 ## Legal

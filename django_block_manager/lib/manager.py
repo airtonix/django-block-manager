@@ -100,7 +100,7 @@ class Block:
 
 	content = property(get_content, add_content, remove_content, "Retrieve, Add, and Remove content items from the block")
 
-	def render (self, template_path="snippets/block.html"):
+	def render (self, template_path="blockmanager/block.html"):
 		return render_to_string(template_path,{
 			"Title": self._title,
 			"Block": self._content
