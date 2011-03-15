@@ -33,8 +33,6 @@ It might not be pretty, or fast, but it achieved what I wanted.
     })
 
 
- c.
-
 ## Legal
 
 ### django_block_manager/*
