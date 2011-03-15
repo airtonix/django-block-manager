@@ -1,0 +1,14 @@
+setup.py
+django_block_manager/__init__.py
+django_block_manager/models.py
+django_block_manager/tests.py
+django_block_manager/views.py
+django_block_manager.egg-info/PKG-INFO
+django_block_manager.egg-info/SOURCES.txt
+django_block_manager.egg-info/dependency_links.txt
+django_block_manager.egg-info/top_level.txt
+django_block_manager/lib/__init__.py
+django_block_manager/lib/autorender.py
+django_block_manager/lib/manager.py
+django_block_manager/templatetags/__init__.py
+django_block_manager/templatetags/blocks.py

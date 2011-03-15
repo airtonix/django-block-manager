@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-block-manager
+Version: 0.0.4dev
+Summary: Simple Django per-application block content template 'thingo'.
+Home-page: http://airtonix.net/projects/django-block-manager
+Author: Zenobius Jiricek
+Author-email: airtonix@gmail.com
+License: LICENSE.md
+Description: UNKNOWN
+Platform: UNKNOWN
