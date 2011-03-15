@@ -35,10 +35,10 @@ It might not be pretty, or fast, but it achieved what I wanted.
            into template output, so if you need it to be html, then it's up to you
            to ensure it's safe.
 
-       ii. SectionName : By default this will be rendered inside a H2 tag,
+        ii. SectionName : By default this will be rendered inside a H2 tag,
            provide a template to override this.
 
-      iii. YourBlockName : This is how you call a block, which contains many bits of
+        iii. YourBlockName : This is how you call a block, which contains many bits of
            content. Requesting specific parts of a block is my next step to implement.
 
    d. In your template :
