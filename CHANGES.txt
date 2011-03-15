@@ -1,0 +1,5 @@
+v0.0.1dev, Sun Feb  6 06:56:57 CST 2011 -- Initial release.
+v0.0.2dev, Sun Feb  6 06:56:57 CST 2011 -- Something
+v0.0.3dev, Sun Feb  6 06:56:57 CST 2011 -- Something
+v0.0.4dev, Wed Mar 16 08:25:00 CST 2011 -- Fixed improper and missing auto_render import
+
