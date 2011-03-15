@@ -2,7 +2,7 @@ from distutils.core import setup
 from setuptools import find_packages, setup
 setup(
 	name='django_block_manager',
-	version='0.0.4dev',
+	version='0.0.6dev',
 	maintainer = "Zenobius Jiricek",
 	maintainer_email = "airtonix@gmail.com",
 	url="http://airtonix.net/projects/django-block-manager",

@@ -5,12 +5,12 @@ from ..lib.manager import BlockManager
 block_manager = BlockManager()
 
 @register.tag
-def navigationbar ( parser, token ):
+def blockmanager ( parser, token ):
 	try:
-		tag_name, bar_name = token.split_contents()
+		tag_name, block_name = token.split_contents()
 	except ValueError:
 		raise template.TemplateSyntaxError, "%r tag requires a single argument" % token.contents[0]
-	return BlockNode( bar_name )
+	return BlockNode( block_name )
 
 class BlockNode ( template.Node ):
 	def __init__ ( self, block_name ):

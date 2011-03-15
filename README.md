@@ -44,7 +44,10 @@ It might not be pretty, or fast, but it achieved what I wanted.
 
    d. In your template :
 
+        {% load blocks %}
+        ...
         {% blockmanager YourBlockName [SectionName] %}
+        ...
 
    e. Provide the block override template
 
